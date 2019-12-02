@@ -2613,6 +2613,25 @@ input, select, textarea {
 				width: 100%;
 			}
 
+/* Intro image */
+
+	.intro-image {
+		display: inline-block;
+		margin-left: 1em;
+		margin-right: 4em;
+		padding: 0.65em;
+		border-radius: 100%;
+		border: solid 1px;
+	}
+
+	.intro-image img {
+		display: block;
+		border-radius: 100%;
+		width: 16em;
+		overflow: hidden;
+	}
+
+
 /* List */
 
 	ol {
@@ -3881,7 +3900,7 @@ input, select, textarea {
 	}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 1em;
 		}
 
 			@media screen and (max-width: 980px) {
