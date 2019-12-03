@@ -98,7 +98,11 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		/* background: #312450; */
+		background-image: linear-gradient(to bottom right, #c24976, #d0895e);
+		background-image: -moz-linear-gradient(to bottom right, #c24976, #d0895e);
+		background-image: -webkit-linear-gradient(to bottom right, #c24976, #d0895e);
+		background-image: -ms-linear-gradient(to bottom right, #c24976, #d0895e);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
