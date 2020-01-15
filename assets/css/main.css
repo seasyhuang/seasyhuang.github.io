@@ -3773,12 +3773,16 @@ input, select, textarea {
 			text-decoration: none;
 			text-transform: uppercase;
 		}
+		.fix {
+			padding: 1.35em 0;
+		}
 
 			#sidebar nav a:before, #sidebar nav a:after {
 				border-radius: 0.2em;
 				bottom: 0;
 				content: '';
 				height: 0.25em;
+				/* why is it different sizes */
 				position: absolute;
 				right: 0;
 				width: 100%;
