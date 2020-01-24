@@ -22,7 +22,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	color: white;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2623,9 +2625,9 @@ input, select, textarea {
 		display: inline-block;
 		margin-left: 1em;
 		margin-right: 4em;
-		padding: 0.65em;
+		/* padding: 0.65em;
 		border-radius: 100%;
-		border: solid 1px;
+		border: solid 1px; */
 	}
 
 	.intro-image img {
