@@ -164,6 +164,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
+			text-decoration: none;
 			color: #ffffff;
 		}
 
@@ -2692,7 +2693,8 @@ input, select, textarea {
 /* Modal */
 
 .modal-content {
-	background-color: rgba(224, 128, 181, 0.14);
+	background-color: rgba(224, 128, 181, 0);
+	border: none;
 }
 
 /* Actions */

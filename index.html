@@ -15,6 +15,27 @@
 	</head>
 	<body class="is-preload">
 
+
+		<!-- Modal -->
+		<div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<!-- <div class="modal-header">
+						<h5 class="modal-title" id="cvModalLabel">Modal title</h5>
+					</div> -->
+					<div class="modal-body">
+						<img src="https://mcgill-my.sharepoint.com/personal/ting_y_huang_mail_mcgill_ca/Documents/sos/Huang,%20Seasy_Resume.png" alt="" class="img-fluid">
+						<ul class="actions justify-content-center">
+							<li><button class="button primary m-5" data-dismiss="modal" aria-label="Close">close</a></li>
+							</ul>
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -42,12 +63,12 @@
 									</div>
 								</span>
 							</section>
-							<section id="intro-p" class="text-center text-md-left">
+							<section id="intro-p" class="text-center text-md-left align-items-center">
 										<h1>Hi there,</h1>
 										<p>I'm <a href="https://github.com/seasyhuang/">Seasy Huang</a>,<br />
 											MSc Candidate at the Cardiovascular Health and Autonomic Regulation Lab at McGill University.
 										</p>
-										<ul class="actions">
+										<ul class="actions justify-content-center justify-content-md-start">
 											<li><a href="#one" class="button scrolly">interested?</a></li>
 										</ul>
 							</section>
@@ -92,11 +113,10 @@
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
 							</div>
+							<!-- button for modal -->
 							<ul class="actions">
-								<li><a href="#" class="button">more</a></li>
-								<!-- TODO:  modal cv -->
+								<li><a class="button" data-toggle="modal" data-target="#cvModal">more</a></li>
 							</ul>
-						</div>
 					</section>
 
 				<!-- Two -->
@@ -136,8 +156,8 @@
 								</ul>
 							</div>
 						</div>
-					</section>
-				</section> -->
+					</section> -->
+				</section>
 
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
@@ -216,6 +236,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	        crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	        crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	        crossorigin="anonymous"></script>
 
 	</body>
 </html>
