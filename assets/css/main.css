@@ -2182,6 +2182,22 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		.features-text {
+			font-size: 0.9em;
+		}
+
+		.overlay {
+			display: none;
+		}
+		
+		.overlay:hover {
+			display: inline-block;
+		}
+
+		.smaller {
+			font-size: 0.55em;
+		}
+
 		@media screen and (max-width: 980px) {
 
 			.features {
