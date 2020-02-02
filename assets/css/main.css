@@ -2184,18 +2184,32 @@ input, select, textarea {
 
 		.features-text {
 			font-size: 0.9em;
+			text-align: justify;
 		}
 
-		.overlay {
-			display: none;
+		.change-icon > .fas {
+			-webkit-transition: visibility 2s ease-out;
+			-moz-transition: visibility 2s ease-out;
+			-o-transition: visibility 2s ease-out;
+			transition: visibility 2s ease-out;
 		}
-		
-		.overlay:hover {
-			display: inline-block;
+
+		.change-icon > .fas + .fas,
+		.change-icon:hover > .fas {
+		  visibility: hidden;
+		}
+		.change-icon:hover > .fas + .fas {
+		  visibility: visible;
 		}
 
 		.smaller {
 			font-size: 0.55em;
+		}
+
+		.inner h3 {
+			text-transform: uppercase;
+			font-size: 0.9em;
+			letter-spacing: 0.5em;
 		}
 
 		@media screen and (max-width: 980px) {
