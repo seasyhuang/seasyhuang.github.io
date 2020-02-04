@@ -60,9 +60,7 @@
 						<div class="inner d-flex flex-column flex-md-row justify-content-center">
 							<section id="intro-img">
 								<span class="intro-image">
-									<div class="crop">
-										<img src="images/prof.png" id="profile">
-									</div>
+									<img src="images/prof.png" id="profile" class="mr-md-5">
 								</span>
 							</section>
 							<section id="intro-p" class="text-center text-md-left align-items-center">
@@ -87,51 +85,53 @@
 								<section>
 									<span class="icon solid major fas fa-file-medical-alt"></span>
 									<!-- <i class="fas fa-file-medical-alt"></i> -->
-									<h3>Research</h3>
+									<h3 class="content-subhead">Research</h3>
 									<p class="features-text">I've always been curious about the human body, exercise, and healthcare. Specifically, I'm interested in whether or not we can improve our lives and health by understanding our own physiological mechanisms. <a href="https://www.mcgill.ca/edu-kpe/charlab">For my master's, we're looking how slow breathing can reduce blood pressure.</a> </p>
 								</section>
 								<section>
 									<span class="icon solid major fas fa-code"></span>
-									<h3>In progress</h3>
+									<h3 class="content-subhead">In progress</h3>
 									<p class="features-text">I like to make things pretty. Historically, I've <a href="https://seasyhuang.pb.design/">used Photoshop</a>, but right now I'm <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">learning how to do that for websites</a> too.  Next, I plan on <a href="https://www.udemy.com/course/javascript-beginners-complete-tutorial/">brushing up on my Javascript</a>. Cole Steele, I really owe you one. </p>
 								</section>
 								<section>
 									<span class="icon solid major fa-book"></span>
-									<h3>readme</h3>
+									<h3 class="content-subhead">readme</h3>
 									<p class="features-text">Second to coffee, books are my crack. Not to sound like a complete cliché, but Yuval Noah Harari's books are the shit. <a href="https://www.goodreads.com/user/show/70781946-seasy-huang"><span class="smaller">Please, I need more friends on Goodreads</span></a><br>Last book that made me cry: <a href="https://www.goodreads.com/book/show/40696776-boy-swallows-universe" class="mx-1 fas fa-book"></a> </p>
 								</section>
 								<section>
 									<span class="change-icon">
 										<span class="icon solid major fas fa-running"></span>
-										<span class="icon solid major fas fa-dumbbell"></span>
+										<span class="icon solid major fas fa-dumbbell d-none d-sm-inline-block"></span>
 									</span>
-									<h3>other</h3>
-									<p class="features-text"><strong>Current:</strong> taking workshops to become a better dancer <a href="https://seasyhuang.github.io/personal.html">[20/100]</a><br>
-									<a href="https://youtu.be/fQ86BuZ_gy8">December 2019 China/Korea Trip</a> - a travel vlog for my grandma <i class="mx-1 fas fa-plane"></i></p>
+									<h3 class="content-subhead">other</h3>
+									<p class="features-text"><strong>Current:</strong> taking workshops to become a better dancer <a href="https://seasyhuang.github.io/personal.html" class="spacing"><span>[</span>20/10<span>0</span>]</a><br>
+									<a href="https://youtu.be/fQ86BuZ_gy8">December 2019 China/Korea Trip</a> <i class="mx-1 fas fa-plane"></i> a travel vlog I made for my grandma.</p>
 								</section>
 							</div>
 							<!-- button for modal -->
 							<ul class="actions">
-								<li><a class="button" data-toggle="modal" data-target="#cvModal">more</a></li>
+								<li><a class="button d-none d-md-inline-block" data-toggle="modal" data-target="#cvModal">more</a></li>
+								<li><a class="button d-md-none" href="https://mcgill-my.sharepoint.com/personal/ting_y_huang_mail_mcgill_ca/Documents/sos/Huang,%20Seasy_Resume.png">more - cv</a></li>
 							</ul>
 					</section>
 
 				<!-- Two -->
 				<section id="two" class="wrapper style2 spotlights">
 					<section id="autoscheduler">
-						<a href="https://github.com/seasyhuang/PM-Replacement" class="image"><img src="images/pm.png" alt="" data-position="center center" width="100" /></a>
+						<a class="image"><img src="images/pm.png" alt="" data-position="center center" width="100" /></a>
 						<div class="content">
 							<div class="inner">
 								<h2><i class="fas fa-clock mr-3"></i>Auto-Scheduler</h2>
-								<p>In <a href="https://www.youtube.com/user/2KSquadTV">my dance team,</a> there are members of the management team who are tasked with carefully selecting which members should be in a project and what their practice schedule should be. For fun, I've been slowly trying to replace them with a Python script.</p>
+								<p>In <a href="https://www.youtube.com/user/2KSquadTV">my dance team,</a> there are members of the management team who are tasked with carefully selecting who should be in a project and what their practice schedule should be. For fun<span class="smaller"> andoutofspite</span>, I've been slowly trying to replace them with a Python script.</p>
 								<ul class="actions">
 									<li><a href="https://github.com/seasyhuang/PM-Replacement" class="button">steal my code</a></li>
 								</ul>
 							</div>
 						</div>
 					</section>
+
 					<section>
-						<a href="https://seasyhuang.pb.design/" class="image"><img src="images/design.png" alt="" data-position="center center" /></a>
+						<a class="image"><img src="images/design.png" alt="" data-position="center center" /></a>
 						<div class="content">
 							<div class="inner">
 								<h2><i class="fas fa-pen-nib mr-3"></i>Graphic Design</h2>
@@ -142,20 +142,22 @@
 							</div>
 						</div>
 					</section>
-					<!--
+
 					<section>
-						<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+						<a class="image darker">
+							<img src="https://images.unsplash.com/photo-1506619216599-9d16d0903dfd" alt="" data-position="center center" />
+						</a>
 						<div class="content">
 							<div class="inner">
-								<h2>Ultricies aliquam</h2>
-								<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+								<h2>[WIP] Espresso Guide</h2>
+								<p>Inspired by <a href="https://cdn.dribbble.com/users/1091324/screenshots/9805384/media/4fd256e6579bd308cd6e8f73c1774105.gif">this</a>, a visual guide to espresso drinks. </p>
 								<ul class="actions">
-									<li><a href="generic.html" class="button">Learn more</a></li>
+									<li><a href="generic.html" class="button">in progress</a></li>
 								</ul>
 							</div>
 						</div>
 					</section>
-				-->
+
 				</section>
 
 				<!-- Three -->

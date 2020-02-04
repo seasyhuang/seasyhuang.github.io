@@ -134,6 +134,17 @@ input, select, textarea {
 		text-align: justify;
 	}
 
+	.content-subhead {
+		text-transform: uppercase;
+		font-size: 0.9em;
+		letter-spacing: 0.5em;
+		text-shadow: 2px 0px 0px #4a4469;
+	}
+
+	.spacing::first-letter, .spacing span {
+		letter-spacing: .4rem;
+	}
+
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
@@ -2212,12 +2223,6 @@ input, select, textarea {
 			font-size: 0.55em;
 		}
 
-		.inner h3 {
-			text-transform: uppercase;
-			font-size: 0.9em;
-			letter-spacing: 0.5em;
-		}
-
 		@media screen and (max-width: 980px) {
 
 			.features {
@@ -2660,9 +2665,9 @@ input, select, textarea {
 
 	.intro-image {
 		display: inline-block;
-		margin-left: 1em;
+		/* margin-left: 1em;
 		margin-right: 4em;
-		/* padding: 0.65em;
+		padding: 0.65em;
 		border-radius: 100%;
 		border: solid 1px; */
 	}
@@ -3152,6 +3157,10 @@ input, select, textarea {
 			-ms-transform: translateX(-1em);
 			transform: translateX(-1em);
 			opacity: 0;
+		}
+
+		.darker {
+			filter: brightness(80%);
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -3956,7 +3965,6 @@ input, select, textarea {
 	}
 
 	#profile {
-		margin-left: 30px;
 		padding: 0.65em;
 		border-radius: 100%;
 		border: solid 1px;
