@@ -2219,6 +2219,10 @@ input, select, textarea {
 		  visibility: visible;
 		}
 
+		.done {
+			text-decoration: line-through;
+		}
+
 		.smaller {
 			font-size: 0.55em;
 		}
@@ -3885,6 +3889,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
+
+			/* update the side/navbar */
+			/* https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling */
 
 			#sidebar {
 				height: 3.5em;
