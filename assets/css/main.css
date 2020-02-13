@@ -2227,6 +2227,37 @@ input, select, textarea {
 			font-size: 0.55em;
 		}
 
+		#progress {
+			transition: color 0.5s linear;
+		}
+
+		#progress:hover {
+			color: #ddaac9;
+		}
+
+		#progress-loader {
+			width: 100%;
+			height: 5px;
+			background: #665785;
+			display: inline-block;
+			border-radius: 10px;
+		}
+
+		.progress-loaded {
+			width: 55%;
+			height: 5px;
+			background-image: -moz-linear-gradient(to right, #f38477, #bd137f);
+			background-image: -webkit-linear-gradient(to right, #f38477, #bd137f);
+			background-image: -ms-linear-gradient(to right, #f38477, #bd137f);
+			background-image: linear-gradient(to right, #f38477, #bd137f);
+			display: flex;
+			border-radius: 10px;
+		}
+
+		.hide {
+			display: none;
+		}
+
 		@media screen and (max-width: 980px) {
 
 			.features {
