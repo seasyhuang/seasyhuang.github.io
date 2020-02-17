@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/circles.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+      var w = $(window).width();
+      var h = $(window).height();
+
+      function randomColor(){
+        // pick a "red" from 0-255
+        var red = Math.floor(Math.random() * 256);
+        // pick a "green" from 0-255
+        var green = Math.floor(Math.random() * 256);
+        // pick a "blue" from 0-255
+        var blue = Math.floor(Math.random() * 256);
+        var color = "rgb(" + red + ", " + green + ", " + blue + ")";
+        return color;
+      }
+
+      function onKeyDown(event) {
+      	// When a key is pressed, set the content of the text item:
+        new Path.Circle({
+          center: [Math.random()*w, Math.random()*h],
+          radius: 10
+        }).fillColor = randomColor();
+      };
+
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <canvas id="myCanvas" resize></canvas>
+  </body>
+</html>
