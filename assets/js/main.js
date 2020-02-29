@@ -187,9 +187,4 @@
 				}
 			});
 
-
-	 $('#progress').click(function(){
-		 $('.progress-loaded').toggleClass('hide');
-	 });
-
 })(jQuery);
