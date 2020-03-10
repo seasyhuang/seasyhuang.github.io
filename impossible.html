@@ -13,85 +13,21 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://kit.fontawesome.com/e0886b7012.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 		<style type="text/css">
-			section {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+			li::first-letter {
+				text-transform: capitalize;
 			}
 
-			section .content {
-				max-width: 50%;
+			ol {
+				padding-bottom: 2rem;
 			}
 
-			section .content h2 {
-				position: relative;
-				margin: 0;
-				padding: 0;
-				display: inline-block;
-				font-size: 3em;
-				transition: 0.5s;
-				transform-origin: left;
-				transform: scaleX(1);
+			.container {
+				padding: 0 150px;
 			}
-
-			section .content h2[data-scroll="in"] {
-				transform: scaleX(1);
-			}
-
-			section .content h2:before{
-				content: '';
-				position: absolute;
-				top:0;
-				left:0;
-				width: 100%;
-				height: 100%;
-				background: #e02bff;
-				transition: 0.5s;
-				transform-origin: right;
-			}
-
-			section .content h2[data-scroll="in"]:before {
-				transform: scaleX(0);
-				transition-delay: 0.2s;
-			}
-
-			/* .loader { */
-			section span {
-				width: 100%;
-				height: 5px;
-				background-image: -moz-linear-gradient(to right, #f38477, #bd137f);
-				background-image: -webkit-linear-gradient(to right, #f38477, #bd137f);
-				background-image: -ms-linear-gradient(to right, #f38477, #bd137f);
-				background-image: linear-gradient(to right, #f38477, #bd137f);
-				display: inline-block;
-				position: relative;
-				border-radius: 10px;
-			}
-
-			/* .loader:before{ */
-			section span:before{
-				width: 100%;
-				height: 5px;
-				background: #665785;
-				content: '';
-				position: absolute;
-				transition: 2s;
-				transform-origin: right;
-			}
-
-			section span[data-scroll="in"]:before {
-				/* 80% = 1-0.8 = 0.2 */
-				transform: scaleX(0.2);
-				transition-delay: 0.2s;
-			}
-
 
 		</style>
-		<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -107,49 +43,78 @@
 			</header>
 			<div id="wrapper">
 
-				<div class="space"></div>
+				<!-- Main -->
+					<section id="main" class="wrapper content">
+						<div class="inner">
+							<div class="container">
+								<h1 class="major text-center">Impossible List</h1>
 
-				<section>
-					<div class="content">
-						<h2 data-scroll>section 1</h2>
-						<h3>subheading</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</section>
+								<ul>
+									<li>Life</li>
+									<ol>
+										<li><s>graduate bsc</s> [June 2019] </li>
+										<li>graduate masters</li>
+										<li>first job</li>
+										<li>become self sufficient</li>
+									</ol>
+									<li>Skills</li>
+									<ol>
+										<li>Complete a udemy course</li>
+										<li>javascript udemy course</li>
+										<li>create an entire web app</li>
+										<li>create an ios app</li>
+										<li>slow breathing app??</li>
+										<li>make a project with AI</li>
+										<li>100 days of code - github green fields</li>
+									</ol>
+									<li>Fitness</li>
+									<ol>
+										<li>Squat</li>
+										<li>DL</li>
+										<li>Hip thrust</li>
+										<li>Pullup</li>
+										<li>Pullup - one arm</li>
+										<li>Handstand</li>
+										<li>Scorpion</li>
+										<li>Needle</li>
+										<li>Do a backflip</li>
+										<li>Waist</li>
+									</ol>
+									<li>Travel</li>
+									<ol>
+										<li>Korea</li>
+										<li>Japan</li>
+										<li>European countries:</li>
+										<li>Visit all the countries</li>
+									</ol>
+									<li>Events</li>
+									<ol>
+										<li>Concerts</li>
+										<li>Coachella</li>
+									</ol>
+									<li>Adventure</li>
+									<ol>
+										<li>Go paragliding</li>
+										<li>Go skydiving</li>
+										<li>Climb a volcano</li>
+									</ol>
+									<li>Etc</li>
+									<ol>
+										<li>fix my skin</li>
+										<li><s>be a SHAD valley program assistant</s> [July 2018]</li>
+										<li><s>get a tattoo</s> [December 2019]</li>
+										<li>make a travel vlog</li>
+										<li>take 100 dance workshops</li>
+										<li>read 1000 books - 1000 lifetimes - <a href="https://www.goodreads.com/user/show/70781946-seasy-huang"><em>Currently: 132</em></a> </li>
+									</ol>
 
-				<section>
-					<div class="content">
-						<h2 data-scroll>section 1</h2>
-						<h3>subheading</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</section>
-
-				<section>
-					<div class="content">
-						<h2 data-scroll>section 1</h2>
-						<h3>subheading</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</section>
-
-				<section>
-					<div class="content">
-						<h2 data-scroll>section 1</h2>
-						<h3>subheading</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</section>
-
-				<section>
-					<p>
-						<span class="loader" data-scroll></span>
-						<br>
-						<a href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web Dev Bootcamp</a> - 80% complete
-					</p>
-				</section>
+								</ul>
 
 
+							</div>
+						</section>
+
+							</div>
 
 
 			</div>
