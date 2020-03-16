@@ -1,0 +1,16 @@
+li::first-letter {
+  text-transform: capitalize;
+}
+
+ol {
+  padding-bottom: 2rem;
+}
+
+.container {
+  padding: 0 150px;
+}
+
+.done {
+  text-decoration: line-through;
+  font-weight: bold;
+}
