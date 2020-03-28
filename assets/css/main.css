@@ -119,6 +119,10 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+		.container {
+		  padding: 0 150px;
+		}
+
 /* Type */
 
 	body, input, select, textarea {
@@ -2238,7 +2242,7 @@ input, select, textarea {
 
 		.features section p .loader[data-scroll="in"]:before {
 			/* example progress: 80% = 1-0.8 = 0.2 */
-			transform: scaleX(0.90);
+			transform: scaleX(0.85);
 			transition-delay: 0.2s;
 		}
 
