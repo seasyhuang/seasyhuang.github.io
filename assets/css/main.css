@@ -219,7 +219,7 @@ input, select, textarea {
 	}
 
 		h1.major {
-			margin: 0 0 1.3em 0;
+			margin: 0 0 0.75em 0;
 			position: relative;
 			padding-bottom: 0.35em;
 		}
@@ -2242,7 +2242,7 @@ input, select, textarea {
 
 		.features section p .loader[data-scroll="in"]:before {
 			/* example progress: 80% = 1-0.8 = 0.2 */
-			transform: scaleX(0.85);
+			transform: scaleX(0.75);
 			transition-delay: 0.2s;
 		}
 
