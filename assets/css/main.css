@@ -2242,7 +2242,7 @@ input, select, textarea {
 
 		.features section p .loader[data-scroll="in"]:before {
 			/* example progress: 80% = 1-0.8 = 0.2 */
-			transform: scaleX(0.69);
+			transform: scaleX(0.55);
 			transition-delay: 0.2s;
 		}
 
