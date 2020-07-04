@@ -10,14 +10,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" type="image/png" href="images/favicon.ico">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" type="text/css" title="v1" href="assets/css/main.css">
-		<!-- <link rel="alternate stylesheet" type="text/css" title="v2" href="assets/css/main.css"> -->
+
+		<!-- Custom -->
+		<!-- No title property = persistent CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" title="v1">
+		<link rel="alternate stylesheet" type="text/css" href="assets/css/white.css" title="v2">
+		<!-- choas theme -->
+
 		<script src="https://kit.fontawesome.com/e0886b7012.js" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="set_style_from_cookie()">
 
 		<!-- Modal -->
 		<div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModalLabel" aria-hidden="true">
@@ -46,7 +52,8 @@
 					<li><a href="research.html">Research</a></li>
 					<li><a href="personal.html">Personal</a></li>
 					<li><a href="now.html">Now</a></li>
-
+					<li><a onclick="switch_style('v1');return false;" name="theme" value="Blue Theme" id="v1">V1</a></li>
+					<li><a onclick="switch_style('v2');return false;" name="theme" value="Pink Theme" id="v2">V2</a></li>
 				</ul>
 			</nav>
 		</header>

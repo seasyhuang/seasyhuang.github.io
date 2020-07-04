@@ -2414,6 +2414,9 @@ input, select, textarea {
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+		font-weight: 300;
+		font-size: 1rem;
+		letter-spacing: 1px;
 	}
 
 		input[type="text"]:invalid,
@@ -4057,10 +4060,13 @@ input, select, textarea {
 	}
 
 	::-webkit-scrollbar-track {
-	  background: #6f6091;
+		background-image: linear-gradient(to bottom, #868fad, #a0c4cc);
+		background-image: -moz-linear-gradient(to bottom, #868fad, #a0c4cc);
+		background-image: -webkit-linear-gradient(to bottom, #868fad, #a0c4cc);
+		background-image: -ms-linear-gradient(to bottom, #868fad, #a0c4cc);
 	}
 
 	::-webkit-scrollbar-thumb {
 	  /* background: rgba(0, 0, 0, 0.4); */
-		background: #a0c4cc;
+		background: #b2b8cb;
 	}
