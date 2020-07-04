@@ -25,6 +25,8 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	color: white;
+	letter-spacing: 1px;
+	font-weight: 300;
 }
 
 article, aside, details, figcaption, figure,
@@ -4045,3 +4047,20 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* Scrollbar */
+
+	::-webkit-scrollbar {
+	  width: 10px;
+	  height: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+	  background: #6f6091;
+	}
+
+	::-webkit-scrollbar-thumb {
+	  /* background: rgba(0, 0, 0, 0.4); */
+		background: #a0c4cc;
+	}
