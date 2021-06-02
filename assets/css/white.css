@@ -1,3 +1,16 @@
 body {
   background-color: white;
 }
+
+
+.landing {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: none;
+  background-size: auto;
+  color: #333;
+  text-align: center;
+  padding-top: 50vh;  /* this is half */
+}
