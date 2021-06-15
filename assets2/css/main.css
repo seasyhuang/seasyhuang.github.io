@@ -112,13 +112,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #f7b95f;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #f7b95f !important;
 			text-decoration: none;
 		}
 
@@ -1842,7 +1842,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #49bf9d;
+			border-color: #f7b95f;
 		}
 
 	select {
@@ -1947,7 +1947,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #49bf9d;
+			border-color: #f7b95f;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2007,6 +2007,13 @@ input, select, textarea {
 		position: relative;
 	}
 
+	/* fix this hover */
+		/* .icon:hover {
+			color: #c0d7d1;
+			background-color: #c0d7d1;
+			border-color: #c0d7d1;
+		} */
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -2050,7 +2057,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
+			/* background: url("images/overlay.png"); */
 			border-radius: 0.35em;
 			content: '';
 			display: block;
@@ -2465,8 +2472,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #f7b95f;
+			color: #f7b95f !important;
 		}
 
 		input[type="submit"]:active,
@@ -2474,8 +2481,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #f7b95f;
+			color: #f7b95f !important;
 		}
 
 		input[type="submit"].icon,
@@ -2518,8 +2525,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #f7b95f;
+			border-color: #f7b95f;
 			color: #ffffff !important;
 		}
 
@@ -2575,6 +2582,16 @@ input, select, textarea {
 
 /* Header */
 
+
+
+	#header > nav {
+		-moz-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		text-align: right;
+	}
+
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2592,9 +2609,9 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: #ffffff;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -2605,7 +2622,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 30%;
 	}
 
 		#header > * {
@@ -2625,15 +2642,15 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
-			color: #ffffff;
+			color: #a8c7be;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #787878;
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: #787878;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2651,11 +2668,11 @@ input, select, textarea {
 	}
 
 		#footer .icons a {
-			color: rgba(255, 255, 255, 0.4);
+			color: #787878;
 		}
 
 	#footer .copyright {
-		color: rgba(255, 255, 255, 0.4);
+		color: #787878;
 		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
@@ -3079,7 +3096,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3219,4 +3236,22 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
+	}
+
+/* Scrollbar */
+
+	::-webkit-scrollbar {
+	  width: 10px;
+	  height: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		background-image: linear-gradient(to bottom, #f8ba60, #fbd0c2);
+		background-image: -moz-linear-gradient(to bottom, #f8ba60, #fbd0c2);
+		background-image: -webkit-linear-gradient(to bottom, #f8ba60, #fbd0c2);
+		background-image: -ms-linear-gradient(to bottom, #f8ba60, #fbd0c2);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #ffffff;
 	}

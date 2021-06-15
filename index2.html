@@ -21,10 +21,35 @@
 
 		<!-- Header -->
 			<header id="header">
+				<nav>
+					<ul>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="personal.html">Personal</a></li>
+						<li><a href="now.html">Now</a></li>
+						<li><a onclick="switch_style('v1');return false;" name="theme" value="Blue Theme" id="v1">V1</a></li>
+					</ul>
+				</nav>
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
 					<h1>Hi, I'm <strong>Seasy 🌙</strong></h1>
 				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="mailto:seasy.huang@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/seasyhuang" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/seasy-huang/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.goodreads.com/user/show/70781946-seasy-huang" class="icon solid fa fa-book"><span class="label">Goodreads</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>Seasy Huang, Bulbasaur enthusiast. &copy; 2021.</li>
+							<li>Thank you <a href="http://html5up.net">@ajlkn</a></li>
+							<!-- <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+						</ul>
+					</div>
+				</footer>
 			</header>
 
 		<!-- Main -->
@@ -33,14 +58,20 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2>
+							<h2>Hi there, I'm <a href="#">Seasy Huang</a></h2>
 						</header>
-						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+						<p>
+							I'm a researcher, developer, and designer. I'm passionate about making both healthcare and data more accessible. I'm a big believer that you can do anything with enough caffeine. I'm a Bulbasaur supremacist. My best skill is sleeping.
+						</p>
+						<p>
+							I'm currently a MSc Candidate at the Cardiovascular Health and Autonomic Regulation Lab at McGill University.
+						</p>
 						<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>
 					</section>
+
+
 
 				<!-- Two -->
 					<section id="two">
@@ -78,21 +109,24 @@
 							</article>
 						</div>
 						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
+							<li><a href="https://seasyhuang.pb.design/" class="button">Full Portfolio</a></li>
 						</ul>
 					</section>
 
 				<!-- Three -->
 					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<h2>Call me beep me</h2>
+						<p>If you want to reach me, just send me a message or email.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyLQQlV6GmI0Vl02b0VCDdM1NXWXCA3BJvWPtd6jurHwZFs3Lhl/exec">
+								<!-- <form method="post" action="#"> -->
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<!-- <label for="name">Name</label> -->
+										<!-- <input type="text" name="name" id="name" placeholder="General Iroh"> -->
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="General Iroh" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="jasmine.dragon@thewest" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="This tea is nothing more than hot leaf juice!" rows="4"></textarea></div>
 									</div>
 								</form>
 								<ul class="actions">
@@ -103,17 +137,18 @@
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
+										475 Pine Avenue W, <br />Room 103<br />
+										Montreal, QC <br />
+										Canada
+
 									</li>
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
+										1 (902) 292-8756
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
+										<a href="#">seasy.huang@gmail.com</a>
 									</li>
 								</ul>
 							</div>
@@ -440,20 +475,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -462,6 +483,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- Submit form using JavaScript AJAX  -->
+			<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 
 	</body>
 </html>
