@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<!--
+	Base: Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+-->
+<html>
+	<head>
+		<title>Seasy Huang</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href="images/favicon.ico">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<!-- Custom -->
+		<!-- No title property = persistent CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<script src="https://kit.fontawesome.com/e0886b7012.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	</head>
+	<body class="is-preload" onload="set_style_from_cookie()">
+
+		<!-- Modal -->
+		<div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="cvModalLabel">CV</h5>
+					</div>
+					<div class="modal-body">
+						<img src="https://previews.dropbox.com/p/thumb/AA14CR5VpXjiOL8qe1lpkOhZd_QF9fF8KdNiMYQEdNURDScOudi4r_D8Gs06aSQRktFxnfsgpd6xPZ_bHHQKv5x141dY2c-xnHEc9ruStpKg2oOTbe2KSGuJqSRJVQWdw5ggNhb5-5UfWS3zkM6Rb5VrSwL6fdUfehxeoDRzYSmbwJ6qIjIJtFe-QgRR-iTYxsqtCx4WPmYQcf8hh9cuoG4Q8LRfjcpu_rrHY5g99uZh6zh3XsrE8DOdE6Qbkk6eDhQaepLdGIUNRNlIKzZQOaEL3EfdFq97EAsLidmwLRma5pc4_Z9RlXYIQ_Llkc4tOpnabIgO9D-Pu0O_MYl0LHlnZRoaVLqx_YUofOR24Dqlpg/p.png?fv_content=true&size_mode=5" alt="" class="img-fluid">
+						<ul class="actions justify-content-center">
+							<li><a class="button primary m-5" data-dismiss="modal" aria-label="Close">close</a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- Header -->
+		<header id="header" class="d-md-none d-xl-flex">
+			<a href="index.html" class="title"><i class="fas fa-moon"></i></a>
+			<nav>
+				<ul>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="personal.html">Personal</a></li>
+					<li><a href="now.html">Now</a></li>
+					<li><a onclick="switch_style('v1');return false;" name="theme" value="Blue Theme" id="v1">V1</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Hello</a></li>
+							<li><a href="#one">Who am I</a></li>
+							<li><a href="#two">Things</a></li>
+							<li><a href="#three">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+			<!-- TODO: add custom scroll and mouse? idk is that too tumblr 2010 -->
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper fullscreen fade-up">
+						<div class="inner d-flex flex-column flex-md-row justify-content-center">
+							<section id="intro-img">
+								<span class="intro-image">
+									<img src="images/prof.png" id="profile" class="mr-md-5">
+								</span>
+							</section>
+							<section id="intro-p" class="text-center text-md-left align-items-center">
+										<h1><strong>Hi there,</strong></h1>
+										<p>I'm <a href="https://github.com/seasyhuang/">Seasy Huang</a>,<br />
+											MSc Candidate at the Cardiovascular Health and Autonomic Regulation Lab at McGill University.
+										</p>
+										<ul class="actions justify-content-center justify-content-md-start">
+											<li><a href="#one" class="button scrolly">interested?</a></li>
+										</ul>
+							</section>
+						</div>
+					</section>
+
+
+				<!-- One -->
+					<section id="one" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Who am I?</h2>
+							<p class="features-text"><span class="smaller">Good question.</span> I'm a big believer that you can do anything with enough caffeine and unwarranted confidence <i class="fas fa-coffee mx-1"></i> I firmly believe that Bulbasaur is the best starter. I'm really good at <a href="https://i.imgur.com/pTXD5a3.png">Magic Eyes</a>. My best skill is sleeping. </p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fas fa-file-medical-alt"></span>
+									<!-- <i class="fas fa-file-medical-alt"></i> -->
+									<h3 class="content-subhead">Research</h3>
+									<p class="features-text">I've always been curious about the human body, exercise, and healthcare. Specifically, I'm interested in whether or not we can improve our lives and health by better understanding our own physiological mechanisms. <a href="research.html">For my master's, we're looking at slow breathing as a non-pharmacological treatment for hypertension.</a> </p>
+								</section>
+								<section>
+									<span class="icon solid major fas fa-code"></span>
+									<h3 class="content-subhead">courses</h3>
+									<p class="features-text">
+										I just finished taking the <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web Dev Bootcamp</a>, a 47 hour full-stack bootcamp on Udemy! Now, I'm working on brushing up my JavaScript:
+										<br>
+										<span class="loader" data-scroll></span>
+										<br>
+										<a href="https://www.udemy.com/course/javascript-beginners-complete-tutorial/">The Modern Javascript Bootcamp Course (2020)</a> progress <i class="fas fa-coffee mx-3"></i> <a href="https://secure-hollows-25066.herokuapp.com/notes1">Notes here</a>
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-book"></span>
+									<h3 class="content-subhead">readme</h3>
+									<p class="features-text">
+										Second to coffee, books are my crack. Not to sound like a complete cliché, but Yuval Noah Harari's books are the shit. <a href="https://www.goodreads.com/user/show/70781946-seasy-huang"><br><span class="smaller float-right">Please, I need more friends on Goodreads</span></a><br>Last book that made me cry: <a href="https://www.goodreads.com/book/show/38746485-becoming" class="mx-1 fas fa-book"></a>
+									</p>
+								</section>
+								<section>
+									<span class="change-icon">
+										<span class="icon solid major fas fa-running"></span>
+										<span class="icon solid major fas fa-dumbbell d-none d-sm-inline-block"></span>
+									</span>
+									<h3 class="content-subhead">other</h3>
+									<p class="features-text">
+										2015 <a href="http://shad.carleton.ca/">SHAD Carleton</a> Fellow <i class="mx-1 fas fa-star"></i> 2018 SHAD McGill Program Assistant.<br><a href="https://www.youtube.com/playlist?list=PL6UHtErYB7xcMBsXDEovhl9x50D4d6lyH">December 2019 China/Korea Trip</a> <i class="mx-1 fas fa-plane"></i> a travel vlog I made for my grandma.<br><strong>Current:</strong> taking workshops to become a better dancer <a href="personal.html" class="spacing"><span>[</span>29/10<span>0</span>]</a>
+									</p>
+								</section>
+							</div>
+							<!-- button for modal -->
+							<ul class="actions">
+								<li><a class="button d-none d-md-inline-block" data-toggle="modal" data-target="#cvModal">resume</a></li>
+								<li><a class="button d-none d-md-inline-block" href="impossible.html">more</a></li>
+								<li><a class="button d-md-none" href="https://www.dropbox.com/s/q337r7sujpq61o8/Huang%2C%20Seasy_Resume.pdf?dl=0" target="external">cv - dropbox</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+				<section id="two" class="wrapper style2 spotlights">
+					<section id="autoscheduler">
+						<a class="image" href="https://github.com/seasyhuang/PM-Replacement"><img src="images/pm_c.png" alt="" data-position="center center" width="100" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2><i class="fas fa-clock mr-3"></i>Auto-Scheduler</h2>
+								<p>In <a href="https://www.youtube.com/user/2KSquadTV">my dance team,</a> there are members of the management team who are tasked with carefully selecting who should be in a project and what their practice schedule should be. For fun, I've been slowly trying to replace them with a Python script.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/seasyhuang/PM-Replacement" class="button">steal my code</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section id="powerbi">
+						<a class="image"><img src="images/pbi.png" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2><i class="fas fa-chart-bar mr-3"></i>Data Visualization</h2>
+								<p>A quick visualization done to familiarize myself with the basics of Microsoft Power BI. Data from third party survey results.</p>
+								<ul class="actions">
+									<li><a href="https://www.dropbox.com/s/28tin3nykvqje3i/LUCA%20Report.pdf?dl=0" class="button" target="_blank" rel="noopener noreferrer">PDF Version</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section id="todo">
+						<a class="image" href="https://github.com/seasyhuang/practice-to-do-list"><img src="images/todol.png" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2><i class="fas fa-clipboard mr-3"></i>To Do List</h2>
+								<p>Following <a href="https://www.youtube.com/channel/UCrqAGUPPMOdo0jfQ6grikZw">Colt Steele's</a> tutorial + added functionality and responsiveness for practice (HTML, CSS, jQuery).</p>
+								<ul class="actions">
+									<li><a href="https://github.com/seasyhuang/practice-to-do-list" class="button">code</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section id="portfolio">
+						<a class="image" href="https://seasyhuang.pb.design/"><img src="images/design.png" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2><i class="fas fa-pen-nib mr-3"></i>Graphic Design</h2>
+								<p>I made some things, and most of them turned out pretty okay.</p>
+								<ul class="actions">
+									<li><a href="https://seasyhuang.pb.design/" class="button">Portfolio</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- <section>
+						<a class="image darker">
+							<img src="https://images.unsplash.com/photo-1506619216599-9d16d0903dfd" alt="" data-position="center center" />
+						</a>
+						<div class="content">
+							<div class="inner">
+								<h2>[WIP] Espresso Guide</h2>
+								<p>Inspired by <a href="https://cdn.dribbble.com/users/1091324/screenshots/9805384/media/4fd256e6579bd308cd6e8f73c1774105.gif">this</a>, a visual guide to espresso drinks. </p>
+								<ul class="actions">
+									<li><a href="generic.html" class="button">in progress</a></li>
+								</ul>
+							</div>
+						</div>
+					</section> -->
+
+				<!-- </section> -->
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Call me beep me</h2>
+							<p>If you want to reach me, just send me a message or email. </p>
+							<div class="split style1">
+								<section>
+									<!-- <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyLQQlV6GmI0Vl02b0VCDdM1NXWXCA3BJvWPtd6jurHwZFs3Lhl/exec"> -->
+									<form class="gform" method="POST" action="">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" placeholder="General Iroh">
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="email" name="email" id="email" placeholder="jasmine.dragon@ofthe.west" required>
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5" placeholder="This tea is nothing more than hot leaf juice!"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a class="button disabled">let's connect!</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Work Address</h3>
+											<span>McGill CHARLab<br />
+											475 Pine Avenue W, Room 103<br />
+											Montreal, QC H2W 1S4<br />
+											Canada</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">seasy.huang@gmail.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>1 (902) 292-8756</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://github.com/seasyhuang" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/seasy-huang/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://www.goodreads.com/user/show/70781946-seasy-huang" class="fa fa-book"><span class="label">Goodreads</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Seasy Huang, Bulbasaur enthusiast. &copy; 2021.</li>
+						<li>Thank you <a href="http://html5up.net">@ajlkn</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+		<script type="text/javascript">ScrollOut();</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	        crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	        crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	        crossorigin="anonymous"></script>
+			<!-- Submit form using JavaScript AJAX  -->
+			<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
+
+	</body>
+</html>

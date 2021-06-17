@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #212121;
 		font-family: "Karla", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 14pt;
 		font-weight: 200;
 		letter-spacing: 1;
 		line-height: 1.75em;
@@ -156,6 +156,17 @@ input, select, textarea {
 		font-size: 1.5em;
 		line-height: 1.5em;
 	}
+
+		h2 a {
+			color: #ffb49f;
+			/* color: #f7b95f; */
+			text-decoration: none;
+		}
+
+		h2 a:hover {
+			color: #ffb49f;
+			/* color: #f7b95f; */
+		}
 
 	h3 {
 		font-size: 1.25em;
@@ -2582,7 +2593,9 @@ input, select, textarea {
 
 /* Header */
 
-
+#override {
+	color: red
+}
 
 	#header > nav {
 		-moz-flex: 1;
@@ -2610,15 +2623,33 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background-color: #ffffff;
-		background-attachment: scroll,								scroll;
-		/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
+		/* background-attachment: scroll,								scroll;
+		background-image:
+						url("images/overlaywh.png"),
+						url("../../images/1.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
+		background-size: auto,								150%; */
+		background-attachment:
+						scroll,
+						scroll;
+		background-image:
+						/* url("images/overlay.png"), */
+						url("../../images/1.jpg");
+		background-position:
+						top left,
+						top left;
+		background-repeat:
+						repeat,
+						no-repeat;
+		background-size:
+						/* auto, */
+						150%,
+						150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em;
+		padding: 6em 4em 4em 4em;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2642,6 +2673,10 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
+			color: #ffffff;
+		}
+
+		#header2 strong, #header b {
 			color: #a8c7be;
 		}
 
@@ -2650,6 +2685,13 @@ input, select, textarea {
 		}
 
 		#header h1 {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 1.35em;
+			line-height: 1.75em;
+			margin: 0;
+		}
+
+		#header2 h1 {
 			color: #787878;
 			font-size: 1.35em;
 			line-height: 1.75em;
@@ -2663,16 +2705,24 @@ input, select, textarea {
 
 /* Footer */
 
+#footer {
+	font-size: 90%;
+	line-height: normal;
+}
+
 	#footer .icons {
 		margin: 1em 0 0 0;
 	}
 
 		#footer .icons a {
-			color: #787878;
+			/* color: #787878; */
+			color: rgba(255, 255, 255, 0.4)
 		}
 
+
 	#footer .copyright {
-		color: #787878;
+		/* color: #787878; */
+		color: rgba(255, 255, 255, 0.4);
 		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
@@ -3068,6 +3118,7 @@ input, select, textarea {
 				font-size: 1.25em;
 			}
 
+
 		/* Header */
 
 			#header {
@@ -3095,7 +3146,6 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #1f1815;
 				/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
