@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -112,7 +113,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #f7b95f;
+		color: #212121;
 		text-decoration: none;
 	}
 
@@ -2583,12 +2584,14 @@ input, select, textarea {
 		.work-item h3 {
 			font-size: 1em;
 			margin: 0 0 0.5em 0;
+			letter-spacing: 0.2rem;
 		}
 
 		.work-item p {
 			font-size: 0.8em;
-			line-height: 1.5em;
+			line-height: 1.75em;
 			margin: 0;
+			letter-spacing: 0.01rem;
 		}
 
 /* Header */
