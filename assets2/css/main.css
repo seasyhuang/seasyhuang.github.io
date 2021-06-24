@@ -2594,7 +2594,7 @@ input, select, textarea {
 		}
 
 		.work-item p {
-			/* font-size: 0.8em; */
+			font-size: 0.9em;
 			line-height: 1.75em;
 			margin: 0;
 			letter-spacing: 0.01rem;
