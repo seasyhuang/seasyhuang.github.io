@@ -2580,7 +2580,7 @@ input, select, textarea {
 /* Work Item */
 
 	.work-item {
-		margin: 0 0 2em 0;
+		margin: 3em 0 2em 0;
 }
 
 		.work-item .image {
@@ -2588,9 +2588,12 @@ input, select, textarea {
 		}
 
 		.work-item h3 {
+			text-transform: uppercase;
 			font-size: 1em;
-			margin: 0 0 0.5em 0;
-			letter-spacing: 0.2rem;
+			margin: 1em 0 1em 0;
+			letter-spacing: 0.6rem;
+			font-weight: 900;
+			color: #eea498;
 		}
 
 		.work-item p {
